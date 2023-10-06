@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+   <title>Welcome to GiftBuddy Dashboard</title>
+   <link href="css/fontawesome.min.css" rel="stylesheet" />
+   <link href="css/jquery.dataTables.min.css" rel="stylesheet" />
+   <link href="css/dataTables.css" rel="stylesheet" />
+   <link href="css/admin.css" rel="stylesheet" />
+</head>
+<body>
+
+   <!-- Sidebar -->
+   <div class="sideBar anim">
+
+      <a class="sidebar-close-btn anim"><i class="fas fa-times"></i></a>
+      
+      <div class="item">
+
+         <!-- Logo -->
+         <div class="logo">
+            <img src="images/logo.png" alt="GiftBuddy"/>
+         </div>
+
+         <nav>
+            <a class="selected"><i class="far fa-file-alt"></i> Requirement</a>
+            <a><i class="far fa-clipboard"></i> Story</a>
+            <a><i class="fas fa-film"></i> Animation</a>
+            <a><i class="fas fa-users"></i> Customer List</a>
+            <span id="moving-bg"></span>
+         </nav>
+
+      </div>
+
+      <!-- Copyright -->
+      <div class="copyright">
+         Copyright © <span id="year"></span><br>
+         All rights reserved.
+         <hr>
+         <a href="http://giftbuddy.com" target="_blank" class="anim">Giftbuddy.com</a>
+      </div>
+
+
+   </div>
+
+   <!-- Dashboard -->
+   <div class="dashboard-container anim">
+
+      <div class="header anim">
+
+         <div>
+            <a class="sidebar-open-btn anim"><i class="fas fa-bars"></i></a>
+            <a class="sidebar-toggle-btn anim"><i class="fas fa-chevron-left"></i></a>
+         </div>
+
+         <div>
+            <div class="user">
+               <div class="user-pic">
+                  <img src="images/user-pic.png" alt="User" />
+               </div>
+               <span>User Name</span>
+            </div>
+            <div class="setting">
+               <a class="setting-icon anim"><i class="fas fa-cog"></i></a>
+               <ul>
+                  <li>
+                     <a><i class="far fa-user-circle"></i> Profile</a>
+                  </li>
+                  <li>
+                     <a><i class="fas fa-sign-out-alt"></i> Logout</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         
+      </div>
+
+      <div class="page-container">
+         
+         <section>
+            <div class="title">Your Requirement :</div>
+            <div class="row">
+               <div class="fieldset-main-container">
+                  <div class="fieldset">
+                     <fieldset>
+                        <legend>Voice Record<span class="star">*</span> /&nbsp;&nbsp;Description<span class="star">*</span></legend>
+                        <textarea placeholder="Type your requirement"></textarea>
+                        <div class="row flex speak-to-type">
+                           <a class="anim mic-container speak-to-type-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512" class="anim"><path d="M176 352c53.02 0 96-42.98 96-96V96c0-53.02-42.98-96-96-96S80 42.98 80 96v160c0 53.02 42.98 96 96 96zm160-160h-16c-8.84 0-16 7.16-16 16v48c0 74.8-64.49 134.82-140.79 127.38C96.71 376.89 48 317.11 48 250.3V208c0-8.84-7.16-16-16-16H16c-8.84 0-16 7.16-16 16v40.16c0 89.64 63.97 169.55 152 181.69V464H96c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16h-56v-33.77C285.71 418.47 352 344.9 352 256v-48c0-8.84-7.16-16-16-16z"></path></svg></a>
+                           <span class="speak-to-type-note">Tap to start recording</span>
+                        </div>
+                        <div class="audio-player-container">
+                           <div class="flex">
+                              <audio preload="metadata" controls controlslist="nodownload" style="width: 100%;">
+                                 <source src="https://www.buzzsprout.com/231452/3483301-magic-mastering-jj-from-goodpods-stops-by.mp3" type="audio/mpeg">
+                                 Your browser does not support the audio tag.
+                              </audio>
+                              <a class="circular-icon-btn" title="Delete Audio"><i class="fas fa-trash-alt"></i></a>
+                           </div>
+                        </div>
+                     </fieldset>
+
+                     <fieldset>
+                        <legend>Media</legend>
+
+                        <div class="grid-row">
+                           <div class="grid-item">
+                              <label>Sender Name <span class="star">*</span></label>
+                              <input type="text" autocomplete="off">
+                           </div>
+                           <div class="grid-item">
+                              <label>Sender Photo <span class="star">*</span></label>
+                              <input type="file" autocomplete="off">
+                           </div>
+                           <div class="grid-item">
+                              <figure class="avatar-container"><img src="images/default-avatar.svg" alt="Avatar"/></figure>
+                           </div>
+                        </div>
+                        <hr/>
+                        <div class="grid-row">
+                           <div class="grid-item">
+                              <label>Receiver Name <span class="star">*</span></label>
+                              <input type="text" autocomplete="off">
+                           </div>
+                           <div class="grid-item">
+                              <label>Receiver Photo <span class="star">*</span></label>
+                              <input type="file" autocomplete="off">
+                           </div>
+                           <div class="grid-item">
+                              <figure class="avatar-container"><img src="images/default-avatar.svg" alt="Avatar"/></figure>
+                           </div>
+                        </div>
+                        <hr/>
+                        <div class="multiple-media-upload-container">
+                           <label>Upload Media :</label>
+                           <div class="all-media-container">
+                              <div class="media-container">
+                                 <a class="delete-media-btn"><img src="images/close.svg" alt="Delete"></a>
+                                 <figure><img src="images/default-avatar.svg" alt="Picture"/></figure>
+                                 <div>
+                                    <input type="file" autocomplete="off">
+                                    <textarea placeholder="Commemnt"></textarea>
+                                 </div>
+                              </div>
+                           </div>
+                           <a class="btn add-media-btn">Add Media</a>
+                        </div>
+                        <hr/>
+                        <div class="media-list-container">
+                           <label>Media List :</label>
+                           <div class="all-media-listing">
+                              <div class="media-container">
+                                 <a class="delete-media-btn"><img src="images/close.svg" alt="Delete"></a>
+                                 <figure><img src="images/default-avatar.svg" alt="Picture"/></figure>
+                                 <div>
+                                    <input type="file" autocomplete="off">
+                                    <textarea placeholder="Commemnt" readonly></textarea>
+                                 </div>
+                              </div>
+                              <div class="media-container">
+                                 <a class="delete-media-btn"><img src="images/close.svg" alt="Delete"></a>
+                                 <figure><img src="images/default-avatar.svg" alt="Picture"/></figure>
+                                 <div>
+                                    <input type="file" autocomplete="off">
+                                    <textarea placeholder="Commemnt" readonly></textarea>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                     </fieldset>   
+                  </div>
+               </div>
+            </div>
+            <div class="row center">
+               <a class="red-btn">Submit</a>
+            </div>
+         </section>
+
+         <section>
+            <div class="title">Story :</div>
+            <div class="row">
+               <div class="story-boards-container">
+                  <div class="story-board">
+                     <figure><img src="images/story-board-1.jpg" alt="Scene"/></figure>
+                     <div class="details">
+                        <p>
+                           <label>Scene-1 Description :</label>
+                           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+                        <textarea class="story-comments-textarea" placeholder="Comments about scene"></textarea>
+                     </div>
+                  </div>
+                  <hr/>
+                  <div class="story-board">
+                     <figure><img src="images/story-board-2.jpg" alt="Scene"/></figure>
+                     <div class="details">
+                        <p>
+                           <label>Scene-2 Description :</label>
+                           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+                        <textarea class="story-comments-textarea" placeholder="Comments about scene"></textarea>
+                     </div>
+                  </div>
+                  <hr/>
+                  <div class="story-board">
+                     <figure><img src="images/story-board-3.jpg" alt="Scene"/></figure>
+                     <div class="details">
+                        <p>
+                           <label>Scene-3 Description :</label>
+                           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+                        <textarea class="story-comments-textarea" placeholder="Comments about scene"></textarea>
+                     </div>
+                  </div>
+               </div>
+               <div class="row center">
+                  <a class="btn approve-story-btn">Approve Story</a> <a class="btn submit-story-comments-btn">Submit Comments</a>
+               </div>
+               <!-- <a class="pdf-link">Download Story PDF</a><br/><br/> -->
+            </div>
+         </section>   
+
+         <section>
+            <div class="title">Animation :</div>
+            <div class="row">
+               <video width="500" controls>
+                  <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                  <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+                  Your browser does not support HTML video.
+               </video><br/><br/>
+               <textarea placeholder="Comments about animation"></textarea><br/><br/>
+               <div class="row center">
+                  <a class="btn approve-animation-btn">Approve Animation</a> <a class="btn">Submit Comments</a>
+               </div>
+            </div>
+         </section>   
+
+         <section>
+            <div class="title">Customer List :</div>
+            <div class="dataTables_wrapper">
+               <table id="example" class="display" style="width:100%">
+                  <thead>
+                      <tr>
+                          <th>Name</th>
+                          <th>Position</th>
+                          <th>Office</th>
+                          <th>Age</th>
+                          <th>Start date</th>
+                          <th>Salary</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>Tiger Nixon</td>
+                          <td>System Architect</td>
+                          <td>Edinburgh</td>
+                          <td>61</td>
+                          <td>2011-04-25</td>
+                          <td>$320,800</td>
+                      </tr>
+                      <tr>
+                          <td>Garrett Winters</td>
+                          <td>Accountant</td>
+                          <td>Tokyo</td>
+                          <td>63</td>
+                          <td>2011-07-25</td>
+                          <td>$170,750</td>
+                      </tr>
+                      <tr>
+                          <td>Ashton Cox</td>
+                          <td>Junior Technical Author</td>
+                          <td>San Francisco</td>
+                          <td>66</td>
+                          <td>2009-01-12</td>
+                          <td>$86,000</td>
+                      </tr>
+                      <tr>
+                          <td>Cedric Kelly</td>
+                          <td>Senior Javascript Developer</td>
+                          <td>Edinburgh</td>
+                          <td>22</td>
+                          <td>2012-03-29</td>
+                          <td>$433,060</td>
+                      </tr>
+                      <tr>
+                          <td>Airi Satou</td>
+                          <td>Accountant</td>
+                          <td>Tokyo</td>
+                          <td>33</td>
+                          <td>2008-11-28</td>
+                          <td>$162,700</td>
+                      </tr>
+                      <tr>
+                          <td>Brielle Williamson</td>
+                          <td>Integration Specialist</td>
+                          <td>New York</td>
+                          <td>61</td>
+                          <td>2012-12-02</td>
+                          <td>$372,000</td>
+                      </tr>
+                      <tr>
+                          <td>Herrod Chandler</td>
+                          <td>Sales Assistant</td>
+                          <td>San Francisco</td>
+                          <td>59</td>
+                          <td>2012-08-06</td>
+                          <td>$137,500</td>
+                      </tr>
+                      <tr>
+                          <td>Rhona Davidson</td>
+                          <td>Integration Specialist</td>
+                          <td>Tokyo</td>
+                          <td>55</td>
+                          <td>2010-10-14</td>
+                          <td>$327,900</td>
+                      </tr>
+                      <tr>
+                          <td>Colleen Hurst</td>
+                          <td>Javascript Developer</td>
+                          <td>San Francisco</td>
+                          <td>39</td>
+                          <td>2009-09-15</td>
+                          <td>$205,500</td>
+                      </tr>
+                      <tr>
+                          <td>Sonya Frost</td>
+                          <td>Software Engineer</td>
+                          <td>Edinburgh</td>
+                          <td>23</td>
+                          <td>2008-12-13</td>
+                          <td>$103,600</td>
+                      </tr>
+                      <tr>
+                          <td>Jena Gaines</td>
+                          <td>Office Manager</td>
+                          <td>London</td>
+                          <td>30</td>
+                          <td>2008-12-19</td>
+                          <td>$90,560</td>
+                      </tr>
+                      <tr>
+                          <td>Quinn Flynn</td>
+                          <td>Support Lead</td>
+                          <td>Edinburgh</td>
+                          <td>22</td>
+                          <td>2013-03-03</td>
+                          <td>$342,000</td>
+                      </tr>
+                      <tr>
+                          <td>Charde Marshall</td>
+                          <td>Regional Director</td>
+                          <td>San Francisco</td>
+                          <td>36</td>
+                          <td>2008-10-16</td>
+                          <td>$470,600</td>
+                      </tr>
+                      <tr>
+                          <td>Haley Kennedy</td>
+                          <td>Senior Marketing Designer</td>
+                          <td>London</td>
+                          <td>43</td>
+                          <td>2012-12-18</td>
+                          <td>$313,500</td>
+                      </tr>
+                      <tr>
+                          <td>Tatyana Fitzpatrick</td>
+                          <td>Regional Director</td>
+                          <td>London</td>
+                          <td>19</td>
+                          <td>2010-03-17</td>
+                          <td>$385,750</td>
+                      </tr>
+                      <tr>
+                          <td>Michael Silva</td>
+                          <td>Marketing Designer</td>
+                          <td>London</td>
+                          <td>66</td>
+                          <td>2012-11-27</td>
+                          <td>$198,500</td>
+                      </tr>
+                      <tr>
+                          <td>Paul Byrd</td>
+                          <td>Chief Financial Officer (CFO)</td>
+                          <td>New York</td>
+                          <td>64</td>
+                          <td>2010-06-09</td>
+                          <td>$725,000</td>
+                      </tr>
+                      <tr>
+                          <td>Gloria Little</td>
+                          <td>Systems Administrator</td>
+                          <td>New York</td>
+                          <td>59</td>
+                          <td>2009-04-10</td>
+                          <td>$237,500</td>
+                      </tr>
+                      <tr>
+                          <td>Bradley Greer</td>
+                          <td>Software Engineer</td>
+                          <td>London</td>
+                          <td>41</td>
+                          <td>2012-10-13</td>
+                          <td>$132,000</td>
+                      </tr>
+                      <tr>
+                          <td>Dai Rios</td>
+                          <td>Personnel Lead</td>
+                          <td>Edinburgh</td>
+                          <td>35</td>
+                          <td>2012-09-26</td>
+                          <td>$217,500</td>
+                      </tr>
+                      <tr>
+                          <td>Jenette Caldwell</td>
+                          <td>Development Lead</td>
+                          <td>New York</td>
+                          <td>30</td>
+                          <td>2011-09-03</td>
+                          <td>$345,000</td>
+                      </tr>
+                      <tr>
+                          <td>Yuri Berry</td>
+                          <td>Chief Marketing Officer (CMO)</td>
+                          <td>New York</td>
+                          <td>40</td>
+                          <td>2009-06-25</td>
+                          <td>$675,000</td>
+                      </tr>
+                      <tr>
+                          <td>Caesar Vance</td>
+                          <td>Pre-Sales Support</td>
+                          <td>New York</td>
+                          <td>21</td>
+                          <td>2011-12-12</td>
+                          <td>$106,450</td>
+                      </tr>
+                      <tr>
+                          <td>Doris Wilder</td>
+                          <td>Sales Assistant</td>
+                          <td>Sydney</td>
+                          <td>23</td>
+                          <td>2010-09-20</td>
+                          <td>$85,600</td>
+                      </tr>
+                      <tr>
+                          <td>Angelica Ramos</td>
+                          <td>Chief Executive Officer (CEO)</td>
+                          <td>London</td>
+                          <td>47</td>
+                          <td>2009-10-09</td>
+                          <td>$1,200,000</td>
+                      </tr>
+                      <tr>
+                          <td>Gavin Joyce</td>
+                          <td>Developer</td>
+                          <td>Edinburgh</td>
+                          <td>42</td>
+                          <td>2010-12-22</td>
+                          <td>$92,575</td>
+                      </tr>
+                      <tr>
+                          <td>Jennifer Chang</td>
+                          <td>Regional Director</td>
+                          <td>Singapore</td>
+                          <td>28</td>
+                          <td>2010-11-14</td>
+                          <td>$357,650</td>
+                      </tr>
+                      <tr>
+                          <td>Brenden Wagner</td>
+                          <td>Software Engineer</td>
+                          <td>San Francisco</td>
+                          <td>28</td>
+                          <td>2011-06-07</td>
+                          <td>$206,850</td>
+                      </tr>
+                  </tbody>
+               </table>
+            </div>
+         </section>   
+
+      </div>
+
+   </div>
+
+
+   <script type="text/javascript" src="js/jquery.min.js"></script>
+   <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+   <script type="text/javascript" src="js/admin.js"></script>
+   
+</body>
+</html>
