@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+   <title>Welcome to GiftBuddy</title>
+   <link href="css/otp-verification.css" rel="stylesheet" />
+</head>
+<body>
+   
+   <div class="container">
+
+      <div class="logo"><img src="images/logo.png" alt="GiftBuddy"/></div>
+
+      <div class="otp-box-container">
+
+         <h1>Please enter the One-Time Password to verify your account</h1>
+         <h2>A code has been sent to <b>000-000-0000</b></h2> 
+         <div class="otp-inputs" id="otp-inputs">
+            <input type="text" maxlength="1"/> 
+            <input type="text" maxlength="1"/> 
+            <input type="text" maxlength="1"/> 
+            <input type="text" maxlength="1"/> 
+            <input type="text" maxlength="1"/> 
+            <input type="text" maxlength="1"/> 
+        </div>
+        <span class="error">This is a wrong number</span>
+        <button class="red-btn">Verify</button>
+        <a>Resend One-Time Password</a>
+      </div>
+   </div>
+
+   <script type="text/javascript">
+      let otp = document.querySelector('#otp-inputs');
+      for(let pin of otp.children) {
+         pin.onkeyup = function() {
+            if(pin.nextElementSibling) {
+                  pin.nextElementSibling.focus();
+            }
+         }
+      }
+   </script> 
+
+</body>
+</html>
