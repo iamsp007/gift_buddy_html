@@ -56,7 +56,7 @@ a:hover {
    color: #000;
 }
 
-a.red-btn {
+.red-btn {
    display: inline-block;
    font-family: 'Titillium Web', sans-serif;
    font-size: 18px;
@@ -78,7 +78,7 @@ a.red-btn {
    transition: all 0.5s ease-in-out;
 }
 
-a.red-btn:hover {
+.red-btn:hover {
    background: var(--primary-horizontal-gradient-hover);
 }
 
