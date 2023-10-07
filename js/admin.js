@@ -92,11 +92,16 @@ $(document).ready(function () {
       e.stopPropagation();
       $(this).parent().remove();
    });
-
    
    $(".approve-story-btn").on("click", function () {
       $(this).html("Story Approved");
       $(this).addClass("approved");
    });
+
+   $(".approve-animation-btn").on("click", function () {
+      $(this).html("Animation Approved");
+      $(this).addClass("approved");
+   });
+  
 
 });
