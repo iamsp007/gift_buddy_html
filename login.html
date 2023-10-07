@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+   <title>Welcome to GiftBuddy</title>
+   <link href="css/fontawesome.min.css" rel="stylesheet" />
+   <link href="css/otp-verification.css" rel="stylesheet" />
+</head>
+<body>
+   
+   <div class="container">
+
+      <div class="logo"><img src="images/logo.png" alt="GiftBuddy"/></div>
+
+      <div class="login-box-container">
+         <div class="login-form">
+            <h2>Login</h2>
+            <ul>
+               <li>
+                  <label>User Name</label>
+                  <input type="text" id="user_name" onkeypress="remove_error(this.id)" autocomplete="off"/>
+               </li>
+               <li>
+                  <label>Password</label>
+                  <input type="password" id="password" onkeypress="remove_error(this.id)" autocomplete="off"/>
+               </li>
+               <div class="flex">
+                  <label><input type="checkbox"> Remember Me</label>
+                  <a class="forgot-password-form-open">Forgot password ?</a>
+               </div>
+            </ul>
+            <button class="red-btn" id="login-form-submit">Submit</button>
+         </div>
+         <div class="forgot-password-form">
+            <a class="back-to-login-form"><i class="fas fa-arrow-circle-left"></i></a>
+            <h2>Forgot Password</h2>
+            <ul>
+               <li>
+                  <label>User Name</label>
+                  <input type="text" id="user_name" onkeypress="remove_error(this.id)" autocomplete="off"/>
+               </li>
+               <li>
+                  <label>Email</label>
+                  <input type="text" id="email" onkeypress="remove_error(this.id)" autocomplete="off"/>
+               </li>
+            </ul>
+            <button class="red-btn">Reset Password</button>
+         </div>
+      </div>
+   </div>
+   
+   <script type="text/javascript" src="js/jquery.min.js"></script>
+   <script type="text/javascript">
+   $(document).ready(function () {  
+
+      $(".forgot-password-form-open").on("click", function (e) {
+         $(".login-form").hide();
+         $(".forgot-password-form").show();
+      });
+
+      $(".back-to-login-form").on("click", function (e) {
+         $(".forgot-password-form").hide();
+         $(".login-form").show();
+      });
+
+   });   
+   </script> 
+
+</body>
+</html>
