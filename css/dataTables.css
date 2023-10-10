@@ -65,6 +65,7 @@
 
 .dataTable {
    width: 100% !important;
+   border: 1px solid #d6d6d6 !important;
 }
 .table {
    color: #000;
@@ -77,22 +78,24 @@
 table.dataTable thead th {
    font-size: 14px;
    padding-left: 10px;
+   background: #fff6ee;
 }
 table.dataTable tbody td {
    font-size: 12px;
    vertical-align: middle;
 }
-.table-bordered td,
-.table-bordered th {
-   border: 1px solid #d6d6d6;
-}
 
 table.dataTable thead th,
-table.dataTable thead td {
-   color: #1e3e6a;
-   border-bottom: 3px double #b2deed;
+table.dataTable tbody td {
+   color: #63334b;
+   border: 1px solid #d6d6d6 !important;
+   border-collapse: collapse !important;
    vertical-align: middle !important;
    box-sizing: border-box;
+}
+
+table.dataTable thead th {
+   border-bottom: 3px double #712c60 !important;
 }
 
 .text-success {
@@ -348,4 +351,9 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
 #acceptRejectBtn {
    float: left;
    padding-top: 2px;
+}
+
+table.dataTable.display>tbody>tr.odd>.sorting_1, 
+table.dataTable.order-column.stripe>tbody>tr.odd>.sorting_1 {
+   box-shadow: none;
 }
