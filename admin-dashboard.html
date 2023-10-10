@@ -48,6 +48,52 @@
    <!-- Live Chat Btn -->
    <a class="live-chat-btn"><i class="fas fa-comments"></i> Live Chat</a>
 
+   <!-- Live Chat Container -->
+   <div class="live-chat-container">
+      <div class="header">
+          <a class="minimize-live-chat"><i class="fas fa-minus"></i></a>
+          <div class="user-pic">
+              <img src="images/user-pic.png" alt="User">
+          </div>
+          <div class="user-status">
+              <span class="name">User Name</span>
+              <div class="status online">Online</div>
+          </div>
+      </div>
+      <div class="main-chat-window">
+         <div class="conversation">
+             <div class="warrning">
+               <p><b>Warrning  :</b>  Lorem Ipsum is simply dummy
+                  text of the printing and typesetting industry.</p>
+               <div class="warrning-btns">
+                  <a>Continue</a>
+                  <a class="cancel">Cancel</a>
+               </div>   
+             </div>
+             <div class="pull-right">
+                <div class="pic-msg">
+                   <figure> <img src="images/user-pic.png" alt="User"></figure>                     
+                   <p>Lorem Ipsum is simply dummy text of the</p>
+                </div>
+                <span class="dt-time">06/15/2023 04:39 am</span>
+             </div> 
+             <div class="pull-left">
+                <div class="pic-msg">
+                   <figure> <img src="images/user-pic.png" alt="User"></figure>
+                   <p>Lorem Ipsum is simply dummy text of the</p>
+                </div>
+                <span class="dt-time">06/15/2023 04:39 am</span>
+             </div>
+          </div>
+          <div class="reply-container">
+             <a><i class="fas fa-paperclip"></i></a>
+             <input type="text" placeholder="Type a message"/>
+             <!-- <textarea placeholder="Type a message"></textarea> -->
+             <a><i class="fas fa-paper-plane"></i></a>
+          </div>            
+      </div>
+   </div>
+
    <!-- Dashboard -->
    <div class="dashboard-container anim">
 
@@ -82,7 +128,8 @@
 
       <div class="page-container">
          
-         <section>
+         <!--| Your Requirement |-->
+         <section style="display: none;">
             <div class="title">Your Requirement :</div>
             <div class="row">
                <div class="fieldset-main-container">
@@ -182,7 +229,8 @@
             </div>
          </section>
 
-         <section>
+         <!--| Story |-->
+         <section style="display: none;">
             <div class="title">Story :</div>
             <div class="row">
                <div class="story-boards-container">
@@ -194,9 +242,9 @@
                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                         </p>
                         <div class="approve-comment-container">
-                           <label><input type="radio" name="scene-1-radio"/> Comment</label>
-                           <label><input type="radio" name="scene-1-radio"/> Approve</label>
-                           <textarea class="scene-1-comments" placeholder="Comments about scene"></textarea>
+                           <label><input type="radio" name="scene-1-radio" title="comment"/> Comment</label>
+                           <label><input type="radio" name="scene-1-radio" title="approve"/> Approve</label>
+                           <textarea placeholder="Comments about scene"></textarea>
                         </div>
                      </div>
                   </div>
@@ -209,9 +257,9 @@
                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                         </p>
                         <div class="approve-comment-container">
-                           <label><input type="radio" name="scene-2-radio"/> Comment</label>
-                           <label><input type="radio" name="scene-2-radio"/> Approve</label>
-                           <textarea class="scene-2-comments" placeholder="Comments about scene"></textarea>
+                           <label><input type="radio" name="scene-2-radio" title="comment"/> Comment</label>
+                           <label><input type="radio" name="scene-2-radio" title="approve"/> Approve</label>
+                           <textarea placeholder="Comments about scene"></textarea>
                         </div>
                      </div>
                   </div>
@@ -224,9 +272,9 @@
                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                         </p>
                         <div class="approve-comment-container">
-                           <label><input type="radio" name="scene-3-radio"/> Comment</label>
-                           <label><input type="radio" name="scene-3-radio"/> Approve</label>
-                           <textarea class="scene-3-comments" placeholder="Comments about scene"></textarea>
+                           <label><input type="radio" name="scene-3-radio" title="comment"/> Comment</label>
+                           <label><input type="radio" name="scene-3-radio" title="approve"/> Approve</label>
+                           <textarea placeholder="Comments about scene"></textarea>
                         </div>
                      </div>
                   </div>
@@ -238,7 +286,8 @@
             </div>
          </section>   
 
-         <section>
+         <!--| Animation |-->
+         <section style="display: none;">
             <div class="title">Animation :</div>
             <div class="row">
                <video width="500" controls>
@@ -253,7 +302,8 @@
             </div>
          </section>   
 
-         <section>
+         <!--| Customer List |-->
+         <section style="display: none;">
             <div class="title">Customer List :</div>
             <div class="dataTables_wrapper">
                <table id="example" class="display" style="width:100%">
@@ -497,7 +547,8 @@
             </div>
          </section>  
          
-         <section>
+         <!--| Chat Application |-->
+         <section style="display: none;">
             <div class="title">Chat Application :</div>
             <div class="chat-user-colors">
                <span>Customer</span>
@@ -507,15 +558,16 @@
             </div>
             <div class="chat-app-contianer">
                <div class="chat-app-left-col">
+                  <a class="chat-left-col-close"><i class="fas fa-times"></i></a>
                   <div class="chat-header">
-                      <div class="user">
-                          <div class="user-pic">
-                              <img src="images/user-pic.png" alt="User">
-                          </div>
-                          <div class="user-details">
-                              <b>Mehul  Rathod</b>
-                          </div>
-                      </div>
+                     <div class="user">
+                        <div class="user-pic">
+                           <img src="images/user-pic.png" alt="User">
+                        </div>
+                        <div class="user-details">
+                           <b>Mehul  Rathod</b>
+                        </div>
+                     </div>
                   </div>
                   <div class="searchBox-inner">
                       <input type="text" class="form-control" wire:model="searchTerm" placeholder="Search...">
@@ -541,6 +593,7 @@
                   </div>
                </div>
                <div class="chat-app-right-col">
+                  <a class="chat-left-col-open"><i class="fas fa-bars"></i></a>
                   <div class="chat-header">
                      <div class="user customer">
                          <div class="user-pic">
@@ -575,7 +628,12 @@
                  </div>
                </div>
             </div>
-         </section>   
+         </section> 
+         
+         <!--| Payment |-->
+         <section>
+            <div class="title">Payment :</div>
+         </section>            
 
       </div>
 
