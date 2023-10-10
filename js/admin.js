@@ -112,7 +112,31 @@ $(document).ready(function () {
    $('.approve-comment-container input[type="radio"]').on("click",function (e) {
       e.stopPropagation();
       var title =$(this).attr("title");
-      alert(title);
+      if (title == "comment") {
+         $(this).closest(".approve-comment-container").find("textarea").show();
+      } else {
+         $(this).closest(".approve-comment-container").find("textarea").hide();
+      }
+   });
+
+   $(".chat-left-col-open").on("click", function () {
+      $(".chat-app-left-col").addClass("open");
+   }); 
+
+   $(".chat-left-col-close").on("click", function () {
+      $(".chat-app-left-col").removeClass("open");
+   }); 
+
+   $(".live-chat-btn").on("click", function (e) {
+      e.stopPropagation();
+      $(this).fadeOut();
+      $(".live-chat-container").fadeIn();
+   });
+
+   $(".minimize-live-chat").on("click", function (e) {
+      e.stopPropagation();
+      $(".live-chat-container").fadeOut();
+      $(".live-chat-btn").fadeIn();
    });
 
 
