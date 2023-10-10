@@ -45,6 +45,9 @@
 
    </div>
 
+   <!-- Live Chat Btn -->
+   <a class="live-chat-btn"><i class="fas fa-comments"></i> Live Chat</a>
+
    <!-- Dashboard -->
    <div class="dashboard-container anim">
 
@@ -190,7 +193,11 @@
                            <label>Scene-1 Description :</label>
                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                         </p>
-                        <textarea class="story-comments-textarea" placeholder="Comments about scene"></textarea>
+                        <div class="approve-comment-container">
+                           <label><input type="radio" name="scene-1-radio"/> Comment</label>
+                           <label><input type="radio" name="scene-1-radio"/> Approve</label>
+                           <textarea class="scene-1-comments" placeholder="Comments about scene"></textarea>
+                        </div>
                      </div>
                   </div>
                   <hr/>
@@ -201,7 +208,11 @@
                            <label>Scene-2 Description :</label>
                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                         </p>
-                        <textarea class="story-comments-textarea" placeholder="Comments about scene"></textarea>
+                        <div class="approve-comment-container">
+                           <label><input type="radio" name="scene-2-radio"/> Comment</label>
+                           <label><input type="radio" name="scene-2-radio"/> Approve</label>
+                           <textarea class="scene-2-comments" placeholder="Comments about scene"></textarea>
+                        </div>
                      </div>
                   </div>
                   <hr/>
@@ -212,7 +223,11 @@
                            <label>Scene-3 Description :</label>
                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                         </p>
-                        <textarea class="story-comments-textarea" placeholder="Comments about scene"></textarea>
+                        <div class="approve-comment-container">
+                           <label><input type="radio" name="scene-3-radio"/> Comment</label>
+                           <label><input type="radio" name="scene-3-radio"/> Approve</label>
+                           <textarea class="scene-3-comments" placeholder="Comments about scene"></textarea>
+                        </div>
                      </div>
                   </div>
                </div>
@@ -479,6 +494,86 @@
                       </tr>
                   </tbody>
                </table>
+            </div>
+         </section>  
+         
+         <section>
+            <div class="title">Chat Application :</div>
+            <div class="chat-user-colors">
+               <span>Customer</span>
+               <span>Designer</span>
+               <span>Animator</span>
+               <span>Supporter</span>
+            </div>
+            <div class="chat-app-contianer">
+               <div class="chat-app-left-col">
+                  <div class="chat-header">
+                      <div class="user">
+                          <div class="user-pic">
+                              <img src="images/user-pic.png" alt="User">
+                          </div>
+                          <div class="user-details">
+                              <b>Mehul  Rathod</b>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="searchBox-inner">
+                      <input type="text" class="form-control" wire:model="searchTerm" placeholder="Search...">
+                  </div>
+                  <div class="all-chat-users">
+                     <div class="user customer selected">
+                        <div class="avatar"><img src="https://staging.thegimbal.net/storage/admin/avatar/manisha.png" alt="User"></div>
+                        <div class="name">Manisha  Patel</div>
+                     </div>
+                     <div class="user designer">
+                        <div class="avatar"><img src="https://staging.thegimbal.net/admin/images/user-pic.png" alt="User"></div>
+                        <div class="name">HCBS PRO LLC</div>
+                        <i class="fa fa-circle text-success online-icon"></i>
+                     </div>
+                     <div class="user animator">
+                        <div class="avatar"><img src="https://staging.thegimbal.net/admin/images/user-pic.png" alt="User"></div>
+                        <div class="name">Shashikant</div>
+                     </div>
+                     <div class="user supporter">
+                        <div class="avatar"><img src="https://staging.thegimbal.net/admin/images/user-pic.png" alt="User"></div>
+                        <div class="name">Bhavesh</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="chat-app-right-col">
+                  <div class="chat-header">
+                     <div class="user customer">
+                         <div class="user-pic">
+                             <img src="images/user-pic.png" alt="User">
+                         </div>
+                         <div class="user-details">
+                           <div class="user-details">
+                              <b>Manisha  Patel</b>
+                              Last Seen 4 months ago
+                           </div>
+                         </div>
+                     </div>
+                  </div>
+                  <div class="chat-history">
+                     <div class="sms-right-container">
+                        <div class="sms-block">
+                           <b>Mehul  Rathod</b>
+                           <p>Hello</p>
+                           <span>10/09/2023 02:58 am</span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="chat-message">
+                     <!-- <div class="sending-message">Sending message . . .</div>
+                     <div class="uploading-file">Uploading file . . .</div>
+                     <div class="no-file-uploaded">No file is uploaded.</div> -->
+                     <div class="chat-input">
+                        <label class="btn-blue" for="chat-file"><input type="file" id="chat-file"><i class="fas fa-paperclip"></i></label>
+                        <input type="text" class="form-control input-md" placeholder="Type your message here..." required="">
+                        <button class="btn-blue"><i class="fas fa-paper-plane"></i></button>
+                     </div>
+                 </div>
+               </div>
             </div>
          </section>   
 

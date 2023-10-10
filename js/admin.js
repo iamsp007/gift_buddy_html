@@ -50,28 +50,28 @@ $(document).ready(function () {
       }
    });
 
-   const audio = document.querySelector("audio");
-   const audioDuration = document.querySelector(".duration");
-   const playButton = document.querySelector(".play-button");
-   let isPlaying = false;
+   // const audio = document.querySelector("audio");
+   // const audioDuration = document.querySelector(".duration");
+   // const playButton = document.querySelector(".play-button");
+   // let isPlaying = false;
 
-   const toggleAudio = (event) => {
-      if (isPlaying) {
-         audio.pause();
-         isPlaying = false;
-         playButton.classList.remove("playing");
-      } else {
-         audio.play();
-         isPlaying = true;
-         playButton.classList.add("playing");
-      }
-   };
+   // const toggleAudio = (event) => {
+   //    if (isPlaying) {
+   //       audio.pause();
+   //       isPlaying = false;
+   //       playButton.classList.remove("playing");
+   //    } else {
+   //       audio.play();
+   //       isPlaying = true;
+   //       playButton.classList.add("playing");
+   //    }
+   // };
 
-   audio.onloadedmetadata = () => {
-      let minutes = Math.floor(audio.duration / 60);
-      let seconds = Math.floor(audio.duration - minutes * 60);
-      audioDuration.innerHTML = `${minutes}:${seconds}`;
-   };
+   // audio.onloadedmetadata = () => {
+   //    let minutes = Math.floor(audio.duration / 60);
+   //    let seconds = Math.floor(audio.duration - minutes * 60);
+   //    audioDuration.innerHTML = `${minutes}:${seconds}`;
+   // };
 
    
    $(".multiple-media-upload-container .add-media-btn").on("click",function (e) {
@@ -101,7 +101,19 @@ $(document).ready(function () {
    $(".approve-animation-btn").on("click", function () {
       $(this).html("Animation Approved");
       $(this).addClass("approved");
+   });  
+
+   $('.radioshow').on('change', function() { 
+      var val = $(this).attr('data-class'); 
+      $('.allshow').hide();
+      $('.' + val).show();        
+  });
+
+   $('.approve-comment-container input[type="radio"]').on("click",function (e) {
+      e.stopPropagation();
+      var title =$(this).attr("title");
+      alert(title);
    });
-  
+
 
 });
