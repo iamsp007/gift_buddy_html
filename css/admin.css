@@ -125,9 +125,9 @@ input[type="time"]:focus,
 input[type="month"]:focus,
 select:focus {
    color: #000;
-   border-color: #80bdff;
+   border-color: #666;
    outline: 0;
-   box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+   box-shadow: 0 0 0 0.2rem rgba(160, 160, 160, 0.2);
 }
 
 select {
@@ -2002,6 +2002,44 @@ a.approved:after {
    text-align: center;
 }
 
+.payment-form-container .payment-form .cards-icon-containr {
+   align-items: center;
+   justify-content: flex-end;
+   gap: 5px;
+}
+
+.payment-form-container .payment-form .cards-icon-containr svg {
+   width: 35px;
+   height: auto;
+}
+
+.questionnaire {
+   display: block;
+   padding: 10px 0 20px;
+}
+
+.questionnaire .questions-container,
+.questionnaire .questions-container li {
+   display: block;
+   padding-bottom: 20px;
+}
+
+.questionnaire .questions-container {
+   padding-bottom: 10px;
+}
+
+.questionnaire .questions-container li label {
+   display: block;
+   font-size: 14px;
+   padding-bottom: 5px;
+}
+
+.questionnaire .questions-container li input {
+   width: 90%;
+   max-width: 90%;
+}
+
+
 
 /*--| Media Query CSS  |----------------------------------------------- */
 
@@ -2182,4 +2220,5 @@ a.approved:after {
    }
 
 }
+
 
