@@ -926,6 +926,110 @@ footer .copyright span {
    display: none;
 }
 
+
+/*--| OWL Carousel CSS |---------------------------------------*/
+
+.owl-carousel {
+   position: relative;
+}
+
+.owl-carousel .owl-stage-outer {
+   padding-top: 30px;
+}
+
+.owl-carousel .owl-nav {
+   position: absolute;
+   top: 0;
+   right: 0;
+   z-index: 9;
+   display: flex;
+   display: -webkit-flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   align-items: center;
+   gap: 5px;
+}
+
+.owl-carousel .owl-nav button {
+   display: block;
+   width: 21px;
+   height: 21px;
+   border: 1px solid var(--secondary-color) !important;
+   border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+   -o-border-radius: 5px;
+   position: relative;
+   -webkit-transition: all 0.5s ease-in-out;
+   -moz-transition: all 0.5s ease-in-out;
+   -ms-transition: all 0.5s ease-in-out;
+   -o-transition: all 0.5s ease-in-out;
+   transition: all 0.5s ease-in-out;
+}
+
+.owl-carousel .owl-nav button span {
+   position: absolute;
+   top: 0;
+   left: 4px;
+   line-height: 12px;
+   font-size: 34px;
+   color: var(--secondary-color);
+   -webkit-transition: all 0.3s ease-in-out;
+   -moz-transition: all 0.3s ease-in-out;
+   -ms-transition: all 0.3s ease-in-out;
+   -o-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+}
+
+.owl-carousel .owl-nav button:hover {
+   background-color: var(--primary-color);
+}
+
+.owl-carousel .owl-nav button:hover span {
+   color: #FFF;
+}
+
+.owl-carousel .owl-dots button {
+   margin: 0 1px;   
+}
+
+.owl-carousel .owl-dot span {
+   background-color: var(--secondary-color) !important;
+   outline: 1px solid #fff;
+   outline-offset: 2px;
+}
+
+.owl-carousel .owl-dot.active span {
+   background-color: var(--primary-color) !important;
+   outline: 1px solid var(--primary-color);
+   outline-offset: 2px;
+}
+
+.owl-carousel .owl-dots {
+   text-align: center;
+   margin-top: 20px;
+ }
+ 
+ .owl-carousel .owl-dot {
+   display: inline-block;
+ }
+ 
+ .owl-carousel .owl-dot span {
+   width: 11px;
+   height: 11px;
+   background-color: #ccc;
+   border-radius: 50%;
+   display: block;
+   margin: 5px 3px;
+ }
+ 
+ .owl-carousel .owl-dot.active span {
+   background-color: #000;
+ }
+
+
+
 /*--| Media Query CSS |---------------------------------------*/
 
 @media screen and (max-width: 1100px) {

@@ -303,7 +303,7 @@
          </section>   
 
          <!--| Customer List |-->
-         <section>
+         <section style="display: none;">
             <div class="title">Customer List :</div>
             <div class="dataTables_wrapper">
                <table id="example" class="display" style="width:100%">
@@ -548,7 +548,7 @@
          </section>  
          
          <!--| Chat Application |-->
-         <section>
+         <section style="display: none;">
             <div class="title">Chat Application :</div>
             <div class="chat-user-colors">
                <span>Customer</span>
@@ -635,33 +635,23 @@
             <div class="title">Payment :</div>
             <div class="payment-form-container">
                <div class="payment-form">
+                  <div class="full flex cards-icon-containr">
+                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 322.5 227.1" xmlns:v="https://vecta.io/nano"><path d="M292.6 227.1H29.9C13.4 227.1 0 213.7 0 197.2V29.9C0 13.4 13.4 0 29.9 0h262.8c16.5 0 29.9 13.4 29.9 29.9v167.3c-.1 16.5-13.5 29.9-30 29.9z" fill="#0066b2"/><path d="M147.6 149.1h-16.8l10.5-64.5h16.8zm-31-64.5l-16 44.4-1.9-9.6h0l-5.7-29s-.7-5.8-8-5.8H58.6l-.3 1.1s8.1 1.7 17.6 7.4l14.6 56.1H108l26.7-64.5h-18.1zm132.2 64.5h15.4l-13.4-64.5h-13.5c-6.2 0-7.8 4.8-7.8 4.8l-25.1 59.7h17.5l3.5-9.6h21.4l2 9.6zm-18.5-22.8l8.8-24.1 5 24.1h-13.8zm-24.6-26.2l2.4-13.9s-7.4-2.8-15.1-2.8c-8.3 0-28.1 3.6-28.1 21.4 0 16.7 23.2 16.9 23.2 25.6s-20.8 7.2-27.7 1.7l-2.5 14.5s7.5 3.6 19 3.6 28.8-5.9 28.8-22.1c0-16.8-23.4-18.3-23.4-25.6-.1-7.3 16.3-6.3 23.4-2.4z" fill="#fff"/><path d="M98.7 119.4l-5.7-29s-.7-5.8-8-5.8H58.6l-.3 1.1S71 88.3 83.2 98.2c11.7 9.5 15.5 21.2 15.5 21.2z" fill="#f9a533"/></svg>
+                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 322.5 227.1" xmlns:v="https://vecta.io/nano"><path d="M292.6 227.1H29.9C13.4 227.1 0 213.7 0 197.2V29.9C0 13.4 13.4 0 29.9 0h262.8c16.5 0 29.9 13.4 29.9 29.9v167.3c-.1 16.5-13.5 29.9-30 29.9z" fill="#36495d"/><path d="M134.2 64.9h54.2v97.4h-54.2z" fill="#f16522"/><path d="M137.6 113.6c0-19.8 9.3-37.3 23.7-48.7-10.5-8.3-23.8-13.2-38.3-13.2-34.2 0-61.9 27.7-61.9 61.9s27.7 61.9 61.9 61.9a61.9 61.9 0 0 0 38.3-13.2c-14.4-11.4-23.7-29-23.7-48.7" fill="#e41b24"/><path d="M261.4 113.6c0 34.2-27.7 61.9-61.9 61.9a61.9 61.9 0 0 1-38.3-13.2c14.4-11.3 23.6-28.9 23.6-48.7s-9.2-37.3-23.6-48.7c10.5-8.3 23.8-13.2 38.3-13.2 34.2-.1 61.9 27.7 61.9 61.9m-5.9 38.3v-2h.8v-.4h-2v.4h.8v2h.4zm4 0v-2.4h-.6l-.7 1.7-.7-1.7h-.6v2.4h.4v-1.8l.7 1.6h.5l.7-1.6v1.8h.3z" fill="#f89e1c"/></svg>
+                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 322.5 227.1" xmlns:v="https://vecta.io/nano"><path d="M292.6 227.1H29.9C13.4 227.1 0 213.7 0 197.2V29.9C0 13.4 13.4 0 29.9 0h262.8c16.5 0 29.9 13.4 29.9 29.9v167.3c-.1 16.5-13.5 29.9-30 29.9z" fill="#253b80"/><path d="M77.4 99.9c-1 6.3-5.8 6.3-10.4 6.3h-2.7l1.9-11.8c.1-.7.7-1.2 1.4-1.2h1.2c3.2 0 6.2 0 7.7 1.8 1 1.1 1.3 2.7.9 4.9zm-2-16.4H57.8c-1.2 0-2.2.9-2.4 2.1l-7.1 45.1c-.1.9.5 1.7 1.4 1.7h8.4c1.2 0 2.2-.9 2.4-2.1l1.9-12.2c.2-1.2 1.2-2.1 2.4-2.1h5.6c11.6 0 18.3-5.6 20-16.7.8-4.9 0-8.7-2.2-11.3-2.5-3-6.9-4.5-12.8-4.5zm40.8 32.6c-.8 4.8-4.6 8-9.5 8-2.4 0-4.4-.8-5.6-2.3s-1.7-3.6-1.3-5.9c.8-4.8 4.6-8.1 9.4-8.1 2.4 0 4.3.8 5.6 2.3 1.3 1.6 1.8 3.7 1.4 6zm11.7-16.4h-8.4c-.7 0-1.3.5-1.4 1.2l-.4 2.4-.6-.9c-1.8-2.6-5.9-3.5-9.9-3.5-9.3 0-17.2 7-18.8 16.9-.8 4.9.3 9.6 3.1 12.9 2.6 3 6.2 4.3 10.6 4.3 7.5 0 11.6-4.8 11.6-4.8l-.4 2.3c-.1.9.5 1.7 1.4 1.7h7.6c1.2 0 2.2-.9 2.4-2.1l4.5-28.8c.3-.8-.4-1.6-1.3-1.6zm44.9 0h-8.5c-.8 0-1.6.4-2 1.1L150.6 118l-4.9-16.5c-.3-1-1.3-1.7-2.3-1.7H135c-1 0-1.7 1-1.4 1.9l9.3 27.3-8.8 12.4c-.7 1 0 2.3 1.2 2.3h8.4c.8 0 1.6-.4 2-1L174 102c.6-1-.1-2.3-1.2-2.3zm30 .2c-1 6.3-5.8 6.3-10.4 6.3h-2.6l1.9-11.8c.1-.7.7-1.2 1.4-1.2h1.2c3.2 0 6.2 0 7.7 1.8.8 1.1 1.1 2.7.8 4.9zm-2.1-16.4h-17.6c-1.2 0-2.2.9-2.4 2.1l-7.1 45.1c-.1.9.5 1.7 1.4 1.7h9c.8 0 1.6-.6 1.7-1.4l2-12.8c.2-1.2 1.2-2.1 2.4-2.1h5.6c11.6 0 18.3-5.6 20-16.7.8-4.9 0-8.7-2.2-11.3-2.4-3.1-6.9-4.6-12.8-4.6zm40.8 32.6c-.8 4.8-4.6 8-9.5 8-2.4 0-4.4-.8-5.6-2.3s-1.7-3.6-1.3-5.9c.8-4.8 4.6-8.1 9.4-8.1 2.4 0 4.3.8 5.6 2.3 1.3 1.6 1.8 3.7 1.4 6zm11.8-16.4h-8.4c-.7 0-1.3.5-1.4 1.2l-.4 2.4-.6-.9c-1.8-2.6-5.9-3.5-9.9-3.5-9.3 0-17.2 7-18.8 16.9-.8 4.9.3 9.6 3.1 12.9 2.6 3 6.2 4.3 10.6 4.3 7.5 0 11.6-4.8 11.6-4.8l-.4 2.3c-.1.9.5 1.7 1.4 1.7h7.6c1.2 0 2.2-.9 2.4-2.1l4.6-28.8c.2-.8-.5-1.6-1.4-1.6zm9.9-15l-7.2 45.9c-.1.9.5 1.7 1.4 1.7h7.3c1.2 0 2.2-.9 2.4-2.1l7.1-45.1c.1-.9-.5-1.7-1.4-1.7h-8.1c-.8.1-1.4.6-1.5 1.3z" fill="#fff"/></svg>
+                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 322.5 227.1" xmlns:v="https://vecta.io/nano"><path d="M292.6 227.1H29.9C13.4 227.1 0 213.7 0 197.2V29.9C0 13.4 13.4 0 29.9 0h262.8c16.5 0 29.9 13.4 29.9 29.9v167.3c-.1 16.5-13.5 29.9-30 29.9z" fill="#006fcf"/><g transform="translate(0 16.675)"><defs><filter id="A" filterUnits="userSpaceOnUse" x="0" y="37.2" width="322.3" height="132"><feColorMatrix values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/></filter></defs><mask maskUnits="userSpaceOnUse" x="0" y="37.2" width="322.3" height="132" id="B"><g filter="url(#A)"><path d="M0 37.2v131.9h322.3V37.2z" fill="#fff"/></g></mask><path d="M282.8 93.5H307V37.2h-25.8v9l-5.7-9H253v11.4l-5-11.4h-37.2c-1.8 0-3.5.1-5.2.4-1.4.2-2.8.5-4.2 1-1.1.3-2.1.7-3.1 1.2-1.2.5-2.3 1.2-3.3 1.9v-1.9-2.5H73.4L70.1 47l-3.4-9.8H38.5v11.5l-5.1-11.5H10.3L0 61.2v27.2 5h16.3l3-8.1H25l3.1 8.1h125.6v-8.2l6.3 8.2h34.7v-1.8-2.3c.9.6 1.8 1.1 2.8 1.5.9.4 1.9.8 2.9 1.1 1.2.4 2.4.7 3.7.9 2 .4 4 .5 5.9.5h20.8l3-8.1h5.7l3.1 8.1h34.8v-8.4l5.4 8.6zm39.5 72.2v-52.8h-2.8-197.1l-5.1 7.2-5-7.2H54.7v56.3H112l5-7.3 5.2 7.3H158V157h-.4c4.5 0 8.5-.8 12.1-2.1v14.3h25V161l6.3 8.2h108.5c3.1 0 6-.5 8.7-1.5 1.4-.6 2.8-1.2 4.1-2z" mask="url(#B)" fill="#f7f7f7"/><g transform="translate(10.3 14.223)"><defs><filter id="C" filterUnits="userSpaceOnUse" x="53.3" y="107.8" width="258.9" height="38"><feColorMatrix values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/></filter></defs><mask maskUnits="userSpaceOnUse" x="53.3" y="107.8" width="258.9" height="38" id="D"><g filter="url(#C)"><path d="M312.2 145.8v-38H53.3v38z" fill="#fff"/></g></mask><path d="M299.4 138.2h-19.5v7.6h19.2c8.2 0 13.1-5 13.1-12.1 0-6.8-4.4-10.7-11.8-10.7h-8.8c-2.2 0-3.7-1.4-3.7-3.6 0-2.3 1.5-3.8 3.7-3.8h16.5l3.4-7.7h-19.6c-8.2 0-13.1 5-13.1 11.8 0 7 4.6 11 11.8 11h8.7c2.2 0 3.7 1.4 3.7 3.7.2 2.2-1.4 3.8-3.6 3.8zm-36.1 0h-19.5v7.6H263c8.2 0 13.1-5 13.1-12.1 0-6.8-4.4-10.7-11.8-10.7h-8.8c-2.2 0-3.7-1.4-3.7-3.6 0-2.3 1.5-3.8 3.7-3.8H272l3.4-7.7h-19.6c-8.2 0-13.1 5-13.1 11.8 0 7 4.6 11 11.8 11h8.7c2.2 0 3.7 1.4 3.7 3.7.1 2.2-1.4 3.8-3.6 3.8zm-25-22.7v-7.7h-30.4v38h30.4v-7.7H217v-7.6h20.8v-7.6H217v-7.4h21.3zm-50.9 0c3.3 0 5 2.1 5 4.7s-1.7 4.7-5 4.7h-10.7v-9.4h10.7zm-10.7 16.6h4.3l11.3 13.7h11.3l-12.6-14c6.5-1.2 10.3-5.9 10.3-11.9 0-7.1-5-12-13.1-12h-20.6v38h9.1v-13.8zm-23.2-11.6c0 2.6-1.6 4.7-4.8 4.7h-10.9v-9.3h10.9c3.2 0 4.8 2 4.8 4.6zm-24.8-12.7v38h9.1v-12.5h11.4c8.3 0 13.5-5.4 13.5-12.7 0-7.5-5-12.7-13.1-12.7h-20.9zm-13.4 38h11.4l-15.2-19.1 15.1-18.8h-11.1l-9.3 12-9.3-12H85.5l15.2 19-15.1 19h11.1l9.3-12.2 9.3 12.1zm-31.7-30.3v-7.7H53.3v38h30.4v-7.7H62.4v-7.6h20.8v-7.6H62.4v-7.4h21.2z" mask="url(#D)" fill="#006fcf"/></g><path d="M270.2 61.6l-.1-3.1 1.9 3.1 14.5 22.7h10.6v-38h-8.9v22l.1 2.8-1.7-2.8-14.2-22h-11.2v38h8.9V61.6zm-36.4-1.1l2.8-7.1 2.8 7.1 3.4 8.4h-12.2l3.2-8.4zm15.1 23.8h10.2l-16.2-38h-12l-16.3 38h9.7l3.2-8.1h18.1l3.3 8.1zm-39.7 0h.5l3.7-8.1h-2.8c-6.2 0-9.9-3.9-9.9-10.6V65c0-6 3.3-10.5 9.8-10.5h9.9v-8.2h-10.6c-11.7 0-18.1 7.9-18.1 18.7v.7c-.1 11.2 6.5 18.5 17.5 18.6zm-32.4 0h9.1V67.6 46.3h-9.1v21 17zm-19.2-30.2c3.3 0 5 2.1 5 4.7s-1.7 4.7-5 4.7h-10.7v-9.4h10.7zm-10.7 16.5h4.3l11.3 13.7h11.3l-12.6-14c6.5-1.2 10.3-5.9 10.3-11.9 0-7.1-5-12-13.1-12h-20.6v38h9.1V70.6zM131.2 54v-7.7h-30.4v38h30.4v-7.8h-21.3V69h20.8v-7.6h-20.8V54h21.3zm-75.6 4.4l-.2-10.3 10.5 36.2h8.2l10.5-36-.2 10v26h8.8v-38h-16L70 73.2l-7.3-26.9h-16v38h8.8V58.4zm-36.3 2.1l2.8-7.1 2.8 7.1 3.4 8.4H16l3.3-8.4zm15.1 23.8h10.3l-16.2-38h-12L.2 84.3h9.7l3.2-8.1h18.1l3.2 8.1z" fill="#006fcf"/></g></svg>
+                  </div>
                   <div class="full">
                      <label>Full Name</label>
                      <input type="text" placeholder="Enter Name"/>
                   </div>
                   <div class="full">
                      <label>Credit Card Number</label>
-                     <input type="text" placeholder="Enter Card Number"/>
-                  </div>
-                  <div class="full">
-                     <label>Exp. Month</label>
-                     <input type="text" placeholder="Enter Month"/>
+                     <input type="text" class="credit-card-number" placeholder="xxxx-xxxx-xxxx-xxxx"/>
                   </div>
                   <div>
-                     <label>Exp. Year</label>
-                     <select>
-                        <option value="2023">2023</option>
-                        <option value="2024">2024</option>
-                        <option value="2025">2025</option>
-                        <option value="2026">2026</option>
-                        <option value="2027">2027</option>
-                        <option value="2028">2028</option>
-                        <option value="2029">2029</option>
-                        <option value="2030">2030</option>
-                        <option value="2031">2031</option>
-                        <option value="2032">2032</option>
-                        <option value="2033">2033</option>
-                     </select>
+                     <label>Exp. Month/Year</label>
+                     <input type="text" class="ccExpiry" placeholder="00/00"/>
                   </div>
                   <div>
                      <label>CVV</label>
@@ -672,7 +662,49 @@
                   </div>
                </div>
             </div>
-         </section>            
+         </section>     
+         
+         <!--| Questionnaire |-->
+         <section>
+            <div class="title">Questionnaire :</div>
+            <div class="fieldset-main-container">
+               <div class="fieldset">
+                  <fieldset>
+                     <legend>Questions</legend>
+                     <div class="questionnaire">
+                        <ul class="questions-container">
+                           <li>
+                              <label>Question-1 ?</label>
+                              <input type="text" placeholder="Answer"/>
+                           </li>
+                           <li>
+                              <label>Question-2 ?</label>
+                              <input type="text" placeholder="Answer"/>
+                           </li>
+                           <li>
+                              <label>Question-3 ?</label>
+                              <input type="text" placeholder="Answer"/>
+                           </li>
+                           <li>
+                              <label>Question-4 ?</label>
+                              <input type="text" placeholder="Answer"/>
+                           </li>
+                           <li>
+                              <label>Question-5 ?</label>
+                              <input type="text" placeholder="Answer"/>
+                           </li>
+                        </ul>
+                        <div>
+                           Text Editor
+                        </div>
+                        <div class="row">
+                           <button class="btn">Submit</button>
+                        </div>
+                     </div>
+                  </fieldset>   
+               </div>
+            </div>   
+         </section>   
 
       </div>
 
